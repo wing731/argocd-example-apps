@@ -43,3 +43,10 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+appConfig:
+  env1: 1
+  env2: 2
+  env3: 3
+  TIMEZONE: Asia/Shanghai
+  test: test
