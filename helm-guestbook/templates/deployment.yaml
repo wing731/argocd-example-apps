@@ -37,7 +37,7 @@ spec:
               path: /
               port: http        
           envFrom:
-          - configMapRef:
+          - secretRef:
               name: {{ .Values.app.name }}              
           resources:
 {{ toYaml .Values.resources | indent 12 }}
