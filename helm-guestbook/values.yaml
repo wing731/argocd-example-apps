@@ -50,6 +50,9 @@ appConfig:
   env3: 3
   TIMEZONE: Asia/Shanghai
   test: test
+ 
+appSecret:
+  sec1: YWFhYQo=
   
 app:
   name: ad-eurekab-deployment-11111
