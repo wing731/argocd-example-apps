@@ -36,11 +36,11 @@ spec:
             httpGet:
               path: /
               port: http
-          resources:
-{{ toYaml .Values.resources | indent 12 }}
           envFrom:
           - configMapRef:
-            name: ad-eurekab-deployment
+            name: ad-eurekab-deployment              
+          resources:
+{{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}      
       nodeSelector:
 {{ toYaml . | indent 8 }}
