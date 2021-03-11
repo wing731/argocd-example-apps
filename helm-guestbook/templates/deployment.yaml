@@ -38,7 +38,7 @@ spec:
               port: http        
           envFrom:
           - configMapRef:
-              name: ad-eurekab-deployment              
+              name: {{ .Values.app.name }}              
           resources:
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}      
