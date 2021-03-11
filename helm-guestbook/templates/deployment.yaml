@@ -39,6 +39,9 @@ spec:
           resources:
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}
+          envFrom:
+          - configMapRef:
+            name: {{ .Values.app.name }}        
       nodeSelector:
 {{ toYaml . | indent 8 }}
     {{- end }}
@@ -50,3 +53,4 @@ spec:
       tolerations:
 {{ toYaml . | indent 8 }}
     {{- end }}
+
