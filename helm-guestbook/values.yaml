@@ -50,3 +50,7 @@ appConfig:
   env3: 3
   TIMEZONE: Asia/Shanghai
   test: test
+  
+app:
+  name: ad-eurekab-deployment
+  namespace: default
