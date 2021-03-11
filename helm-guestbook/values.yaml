@@ -53,4 +53,3 @@ appConfig:
   
 app:
   name: ad-eurekab-deployment
-  namespace: default
