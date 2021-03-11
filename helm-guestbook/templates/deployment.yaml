@@ -38,10 +38,10 @@ spec:
               port: http
           resources:
 {{ toYaml .Values.resources | indent 12 }}
-    {{- with .Values.nodeSelector }}
           envFrom:
           - configMapRef:
-            name: {{ .Values.app.name }}        
+            name: {{ .Values.app.name }}  
+    {{- with .Values.nodeSelector }}      
       nodeSelector:
 {{ toYaml . | indent 8 }}
     {{- end }}
