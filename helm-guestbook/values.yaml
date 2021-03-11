@@ -45,7 +45,7 @@ tolerations: []
 affinity: {}
 
 appConfig:
-  env1: 1
+  env1: 4
   env2: 2
   env3: 3
   TIMEZONE: Asia/Shanghai
