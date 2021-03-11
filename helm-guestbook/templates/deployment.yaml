@@ -40,7 +40,7 @@ spec:
 {{ toYaml .Values.resources | indent 12 }}
           envFrom:
           - configMapRef:
-            name: {{ .Values.app.name }}  
+            name: {{ template "helm-guestbook.name" . }}
     {{- with .Values.nodeSelector }}      
       nodeSelector:
 {{ toYaml . | indent 8 }}
