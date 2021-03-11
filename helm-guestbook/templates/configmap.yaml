@@ -3,7 +3,7 @@ kind: Secret
 metadata:
  name: {{ .Values.app.name }}
 data:
-  {{- range $key, $val := .Values.appConfig }}
+  {{- range $key, $val := .Values.appSecret }}
   {{ $key }}: {{ $val | quote }}
   {{- end}}
 
